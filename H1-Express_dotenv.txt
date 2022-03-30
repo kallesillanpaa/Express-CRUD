@@ -1,0 +1,10 @@
+1)Initialisoi projekti Node Package Managerilla (npm)
+2)Luo Express-applikaatio. Miten asennat moduulin?
+3)Asenna myös nodemon-moduuli, ja ota se käyttöön kun ohjelmaa ajetaan npm start -käskyllä.
+4)Asenna dotenv-moduuli, ja ota se käyttöön: require('dotenv').config() //Nyt process.env.MUUTTUJA lukee muuttujan tiedot .env-tiedostosta.
+5)Luo .env -tiedosto ja aseta käytettävä portti sinne. Luo myös joku toinen muuttuja .env-tiedostoon ja tulosta muuttuja konsoliin.
+6)Testaa ohjelmaa niin että portti luetaan .env-tiedostosta tai vaihtoehtoisesti määritetystä portista 
+(määritä itse mikä portti) mikäli .env-tiedostossa porttia ei ole määritelty. 
+->Käytä app.listen -metodia, anna ensimmäiseksi parametriksi portti-muuttuja ja toiseksi funktio(yleensä nuolifunktiolla), 
+joka tulostaa konsoliin, että express-ohjelma on käynnissä portissa <PORTIN_NUMERO>.
+---------------------------------------------------------------------------------------------------------------------------------------------
