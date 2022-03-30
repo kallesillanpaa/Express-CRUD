@@ -1,0 +1,19 @@
+1) Jos kirjoitat osoiteriville esim. osoitteen [localhost:3000]/cars, ohjelman tulee 
+tulostaa index-sivulle cars-teksti. Miten toteutat?
+
+Vinkki 1: käytä app.get('/:queryString' ... //korvaa queryString haluamallasi
+Vinkki 2: aseta res.render -metodin toiseksi parametriksi sivulle vietävä arvo, esim: queryString: muuttuja_tähän
+Vinkki 3: aseta index.ejs -sivulle (esim. queryString kuten vinkissä 1) samannimimen arvo kuin olet app.get:issä asettanut 
+(ja res.renderin toisen parametrin "name"-kohtaan (kuten vinkissä 2 queryString)). Muista <%= ... %> -tagit.
+Vinkki 4: käytä req.params.valitsemasiNimi (kohdassa)
+
+Jatkotehtävä: Lisää res.render -metodiin toiseen parametriin pilkulla joku toinen muuttuja tai objekti.
+Mikäli viet objektin, jolla monta name-value -paria, niin voit index -sivulla asettaa arvon seuraavasti:
+ Jos olisi seuraavanlainen data-niminen objekti:
+  data: {
+            queryString: req.params.queryString
+        }
+
+->voisi index-sivulla hakea data.queryString
+
+Katso tarvittaessa https://www.youtube.com/watch?v=VM-2xSaDxJc&ab_channel=NoobCoder

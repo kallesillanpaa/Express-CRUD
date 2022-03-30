@@ -1,0 +1,7 @@
+1)Asenna npm:llä ejs, ja aseta view engineksi ejs; app.set -metodilla. Ensimmäiseksi parametriksi tulee 'view engine' ja toiseksi 'ejs'.
+2)Luo projektin juureen views-kansio. Express tietää automaattisesti nyt että views-kansiosta haetaan ejs-templatet.
+3)Luo views-kansioon index.ejs -tiedosto (joka on kuin mikä tahansa index.html -tiedosto mutta .ejs-päätteellä).
+4)Reititä app.get -metodilla '/'-osoitteeseen (eli localhostin juureen). Renderöi template res.render -metodilla 
+->(parametriksi pelkkä ejs-tiedoston alkuosa).
+
+Index.ejs -tiedosto pitäisi nyt näkyä /-reitityksessä.
